@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import CardList from "./CardList.js";
+import SearchBox from "./SearchBox.js";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="tc">
+        <h1>RoboFriends</h1>
+        <SearchBox />
+        <CardList />
+      </div>
+    </Fragment>
   );
-}
+};
 
 export default App;
