@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
-import CardList from "./CardList.js";
-import SearchBox from "./SearchBox.js";
+import CardList from "../Components/CardList.js";
+import SearchBox from "../Components/SearchBox.js";
 import "./App.css";
 import { render } from "@testing-library/react";
 
